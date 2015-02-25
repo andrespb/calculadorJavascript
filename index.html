@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Calculadora</title>
+	<script SRC="operaciones.js"></script>
+	<link rel="stylesheet" type="text/css" href="style.css" />
+</head>
+<body>
+	<div id="contenedor">
+		<section style="margin: 5px;">
+		<fieldset style="border-radius: 5px; padding: 5px; min-height:100px;">
+			<legend align= "center" >Calculadora</legend>
+				<div id="panel" align="center">
+					<input type="Text" id="resultado" name="resultado" size="40" style="text-align:right" onkeypress="return soloNumeros(event)">
+				</div>
+				<div id="numeros" align="center">
+					<input type="button" id="btn1" class="numeros" value="0" onclick="escribir(value)">
+					<input type="button" id="btn2" class="numeros" value="1" onclick="escribir(value)">
+					<input type="button" id="btn3" class="numeros" value="2" onclick="escribir(value)">
+					<input type="button" id="btn4" class="numeros" value="3" onclick="escribir(value)">
+					<input type="button" id="btn5" class="numeros" value="4" onclick="escribir(value)">
+					<input type="button" id="btn6" class="numeros" value="5" onclick="escribir(value)">
+					<input type="button" id="btn7" class="numeros" value="6" onclick="escribir(value)">
+					<input type="button" id="btn8" class="numeros" value="7" onclick="escribir(value)">
+					<input type="button" id="btn9" class="numeros" value="8" onclick="escribir(value)">
+					<input type="button" id="btn10" class="numeros" value="9" onclick="escribir(value)">
+				</div>
+				<div id="operadores" align="center">
+					<input type="button" id="bto1" class="operador" value="+" onclick="validarSignos(value)">
+					<input type="button" id="bto2" class="operador" value="-" onclick="validarSignos(value)">
+					<input type="button" id="bto3" class="operador" value="*" onclick="validarSignos(value)">
+					<input type="button" id="bto4" class="operador" value="/" onclick="validarSignos(value)">
+					<input type="button" id="bto5" class="operador" value="sqrt" onclick="raiz()">
+					<input type="button" id="bto6" class="operador" value="sqr" onclick="exponente()">
+				</div>
+				<div id="operadores_secundarios" align="center">
+					<input type="button" id="sen" class="operadorSecundario" value="SenX" onclick="escribir(value)">
+					<input type="button" id="cos" class="operadorSecundario" value="CosX" onclick="escribir(value)">
+					<input type="button" id="tan" class="operadorSecundario" value="TanX" onclick="escribir(value)">
+					<input type="button" id="ant" class="operadorSecundario" value="<-" onclick="eliminarAnterior()">
+					<input type="button" id="del" class="operadorSecundario" value="C" onclick="eliminarTodo()">
+					<input type="button" id="res" class="operadorSecundario" value="=" onclick="calcular()">
+				</div>
+		</fieldset>
+	</div>
+</body>
+</html>
+

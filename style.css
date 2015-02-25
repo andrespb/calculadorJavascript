@@ -1,0 +1,43 @@
+#contenedor{
+	width:600px;
+    height:auto; 
+    border: 3px solid #ccc;
+    margin:0 auto; 
+    background-color: #f6f8d8;
+}
+#panel{
+	width:550px;
+    height:auto; 
+    margin:0 auto;  
+}
+#numeros{
+    width:550px;
+    height:auto; 
+    margin:0 auto;  
+}
+#operadores{
+	width:550px;
+    height:auto; 
+    margin:0 auto;  
+}
+#operadores_secundarios{
+    width:550px;
+    height:auto; 
+    margin:0 auto;  
+}
+input.panel{
+	width: 40%;
+	height: 20%;
+	font-size: 14px;
+	margin:0 auto 0;
+}
+input.numeros{
+	width: 9%;
+}
+
+input.operador { 
+	width: 75px; 
+}
+input.operadoresSecundario{ 
+	width: 85px; 
+}
